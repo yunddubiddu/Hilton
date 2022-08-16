@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+
+.e_first,.e_last>input{
+    outline:none;
+}
+.all_wrap a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+.all_wrap, .all_wrap p, .all_wrap em{
+    color:#494949;
+    letter-spacing: 1px;
+}
+.all_wrap p{
+    margin-bottom: 20px;
+}
+.event_sec1440{
+    width: 1200px;
+    margin: auto;
+}
+.event_sec1440>.e_innerbox>.e_inner_txt{
+     margin-top: 100px;
+}
+.event_sec1440>.e_innerbox>div>h1{
+    font-size: 59px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.event_sec1440>.top_area>div>p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/**********sec2***********/
+
+.e_searchBox{
+    margin: 0 auto 120px;
+ 
+}
+.e_innerbox{
+    width: 1200px;
+}
+.e_search_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-bottom: 100px;
+}
+.e_search_left{
+    width: calc(50% - 15px);
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.e_search_left>div{
+    position: relative;
+    width: calc(50% - 10px);
+}
+.e_search_left>div>input{
+    width: 98%;
+    border-left-width:0; 
+    border-right-width:0; 
+    border-top-width:0; 
+    border-bottom-width: 0;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    font-size: 16px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+.e_search_left>div>span{
+    position: absolute;
+    right: 0;
+}
+.e_first{
+    margin-right: 50px;
+}
+.e_seach_right{
+    display: flex;
+    width: calc(50% - 15px);
+    /* display: inline-block; */
+    justify-content: space-between;
+}
+.e_seach_right>input{
+    width: 75%;
+    text-align: left; 
+    border-left-width:0; 
+    border-right-width:0; 
+    border-top-width:0; 
+    border-bottom-width: 0;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    font-size: 16px;
+    padding-bottom: 8px;
+    outline: none;
+    box-shadow: none;
+}
+.e_seach_right>.e_search{
+    cursor: pointer;
+    background-color: #002453;
+    padding:8px 30px;
+    vertical-align: bottom;
+    border: none;
+    border-radius: 2px;
+}
+.e_seach_right>.e_search:hover{
+    opacity: 0.9;
+}
+.e_seach_right>a{
+    display: block;
+    font-size: 16px;
+}
+.e_seach_right>button>a{
+    color: white;
+    letter-spacing: 1px;
+}
+.e_side{
+    text-align: end;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.e_select{
+    display: inline-block;
+    width:150px;
+    text-align: right;
+}
+
+.hide{
+    display: none;
+}
+
+/****************sec3*******************/
+
+.e_innerbox{
+    width: 1200px;
+    overflow: hidden; 
+}
+.e_innerbox>select{
+    display: block;
+    margin-left: auto;
+    width: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: url(../Img/arrow_drop_down_FILL0_wght100_GRAD0_opsz24.png) no-repeat 90% 50%;
+    appearance: none;
+    border-left-width:0; 
+    border-right-width:0; 
+    border-top-width:0; 
+    border-bottom-width:0;
+    border-radius: 0px;
+    font-size: 14px;
+    outline:none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.figure_wrap{
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.figure_wrap>figure{
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.figure_wrap>figure>div>a>img{
+    width: 100%;
+}
+.figure_txt{
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgba(238, 236, 231, 50%);
+    
+}
+.figure_wrap figcaption{
+    font-size: 34px;
+    margin-bottom: 8px;
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+.e_date{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.e_date>em{
+    margin-left: -120px;
+}
+.e_date>span{
+    font-size: 24px;
+    line-height: 24px;
+}
+.e_more{
+    margin-bottom: 100px;
+}
+.e_more>button{
+    cursor: pointer;
+    display: block;
+    padding: 8px 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #494949;
+    border: 1px solid rgb(118, 118, 118);
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: auto;
+}
+.e_more>button:hover{
+    background-color: rgb(118, 118, 118);
+    color: #fff;
+}
+
+
+
+
+/***********sec4************/
+
+#none{
+    display: none;
+
+}
+#e_btn{
+    cursor: pointer;
+}
+
+
+/*더보기 버튼*/
+.js-load { 
+    display: none;
+  }
+
+  .js-load.active {
+    display: block;
+  }
+
+
+  .event_fix_btn{
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 5%;
+    flex-direction: column;
+}
+
+.event_fix_btn>button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    margin: 5px 15px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: #eeece7;
+    cursor: pointer;
+    font-family: "Noto Serif KR";
+    transition: all 0.3s ease-out;
+}
+
+/***************반응형 ***************/
+
+@media only screen and (max-width: 1200px) {
+    .event_sec1440{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .e_innerbox{
+        width: 100%;
+        margin: right;
+    }
+    .e_innerbox>.e_search_wrap{
+        margin: auto;
+    }
+    .event_sec1440>.e_innerbox>.e_inner_txt{
+        margin-top: 50px;
+   }
+    .event_sec1440>.e_innerbox>div>h1 {
+        font-size: 30px;
+    }
+    .event_sec1440>.e_innerbox>div>p{
+        font-size: 16px;
+    }
+    .e_search_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .e_search_left{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .e_search_left>.e_first{
+        width: 50%;
+        margin: 0;
+    }
+    .e_search_left>.e_first>input{
+        width: 90%;
+    }
+    .e_search_left>.e_last{
+        width: 50%;
+    }
+    .e_search_left>.e_last>input{
+        width: 90%;
+        float: right;
+    }
+    .e_search_left>div:nth-child(1)>span{
+        position: absolute;
+        right: 8.5%;
+    }
+    .e_search_left>div:nth-child(2)>span{
+        position: absolute;
+        right: 0px;
+    } 
+    .e_seach_right{
+        padding-top: 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .e_seach_right>input{
+        width: 90%;
+        background-color: #EEECE7;
+        border: none;
+    }
+
+    .e_seach_right>button>a{
+        white-space: nowrap; /*같이 줄어들게 함*/
+ 
+    }
+    .e_date{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .e_date>em{
+        margin-left: 0;
+    }
+      /*max-width: 1200px*/
+}
+
+
+@media only screen and (max-width: 900px) {
+    .event_sec1440{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .e_innerbox{
+        width: 100%;
+        margin: right;
+    }
+    .e_innerbox>.e_search_wrap{
+        margin: auto;
+    }
+    .figure_wrap>figure {
+        width: 100%;
+    }
+    .figure_wrap>figure>div>figcaption{
+        font-size: 24px;
+    }
+}
+    
+@media only screen and (max-width: 768px) {
+    .event_sec1440{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .e_date>span{
+        font-size: 20px;
+    }
+    .e_seach_right>button{
+        font-size: 14px;
+    }
+    .e_more>button{
+        font-size: 14px;
+    }
+ 
+}
+@media only screen and (max-width: 375px) {
+
+    .event_sec1440>.e_innerbox>div>p{
+        font-size: 14px;
+    }
+    .e_search_left>.e_first>input{
+        font-size: 14px;
+    }
+    .e_search_left>.e_last>input{
+        font-size: 14px;
+    }
+    .e_seach_right>input{
+        font-size: 14px;
+    }
+    .e_seach_right>button{
+        font-size: 14px;
+    }
+    .e_date>em{
+        margin-left: 1px;
+    }
+    .e_date>em,p{
+        font-size: 14px;
+    }
+}

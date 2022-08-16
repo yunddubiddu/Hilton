@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀레니엄 힐튼 서울 | 예약</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+</head>
+<body>
+    <main>
+        <figure class="reservation_ban">
+            <h2>RESERVATION</h2>
+        </figure>
+        <section class="reservation">
+            <article class="reservation_1">
+                <h5>밀레니엄 힐튼 서울</h5>
+                <div>
+                    <input type="text" id="res_IN" value="2022-06-22" readonly>
+                    <span class="reservation_cal"></span>
+                </div>
+                <div>
+                    <input type="text" id="res_OUT" value="2022-06-22" readonly>
+                    <span class="reservation_cal"></span>
+                </div>
+                <div id = reservation_peo onclick="openCloseToc1()">
+                    <p>성인 <input id="countAdultValue" value="2" readonly> / 어린이 <input id="countChlidValue" value="0" readonly></p>
+                    <span class="reservation_peo_img">
+                    </span>
+                </div>
+                <h5>프로모션 코드</h5>
+                <input type="text" placeholder="CODE NUMBER"><br>
+                <button type="submit">검색</button>
+                <span class="reservation_inquiry">
+                    <h6>예약문의</h6>
+                    <p>TEL. +82-2-753-7788</p>
+                    <p>E-mail. seoul@hilton.com</p>
+                </span>
+                <ul id="reservation_1_men">
+                    <li>
+                        <h6>어른</h6>
+                        <div class="countNum">
+                            <input type="button" class="reservation_mi" onclick="countAdult('minus')">
+                            <p id="AdultNum">2</p>
+                            <input type="button" class="reservation_pl" onclick="countAdult('plus')">
+                        </div>
+                    </li>
+                    <li>
+                        <h6>어린이</h6>
+                            <div class="countNum">
+                                <input type="button" class="reservation_mi" onclick="countChild('minus')">
+                                <p id="childNum">0</p>
+                                <input type="button" class="reservation_pl" onclick="countChild('plus')">
+                            </div>
+                    </li>
+                    <li><button onclick="printName()">완료</button></li>
+                </ul>
+            </article>
+            <article class="reservation_2">
+                <div class="reservation_top">
+                    <h3>객실 & 옵션선택</h3>
+                    <ul class="reservation_ing">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                    <div class="reservation_2_gray"></div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="reservation_rooms">
+                            <div class="reservation_roomsL">
+                                <h4>Hotel ｜ Room Only</h4>
+                                <p>조식 불포함 / 수영장 + 피트니스</p>
+                            </div>
+                            <div class="reservation_roomsR">
+                                <h6>(1박/1객실)</h6>
+                                <p>KWR <span>270,500~</span></p>
+                                <span id="reservation_selection" onclick="ROOMONLY()">객실선택</span>   
+                            </div>
+                        </div>
+                        <span class="rooms_content" id="rooms_content_1">
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img1"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>게스트 룸</h5>
+                                        <span>
+                                            <input type="radio" name="check11" checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input type="radio" name="check11">
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>270,500~</span></p>
+                                        <span id="reservation_selection" 
+                                        onclick="openCloseToc11()">요금보기</span>
+                                    </div>
+                                </li>
+                                <li id="option1-1" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 270,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 27,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 327,305</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img2"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>디럭스 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check12" checked>
+                                            <label for="first">
+                                                킹
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check12">
+                                            <label for="second">
+                                                트윈
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check12">
+                                            <label for="second">
+                                                프리미엄
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>280,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc12()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option1-2" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 280,500원 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 28,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 339,405</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img4"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>이그젝큐티브</h5>
+                                        <span>
+                                            <input input type="radio" name="check13" checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check13">
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>331,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc13()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option1-3" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 331,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 69,615</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 401,115</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img6"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>스위트 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check14" checked>
+                                            <label for="first">
+                                                이그젝큐티브
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check14">
+                                            <label for="second">
+                                                프리미어
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check14">
+                                            <label for="second">
+                                                파크힐 듀 플랙스
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>430,000~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc14()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option1-4" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 450,000 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 94,500</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 544,500</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="reservation_rooms">
+                            <div class="reservation_roomsL">
+                                <span>패키지</span>
+                                <h4>Hilton Honors Only | Hotel | Bed & Breakfast</h4>
+                                <p>할인 조식 포함 / 수영장 + 피트니스</p>
+                                <p>2022.05.01 ~ 2022.12.31</p>
+                                <p><a href="">패키지 상세보기</a></p>
+                            </div>
+                            <div class="reservation_roomsR">
+                                <h6>(1박/1객실)</h6>
+                                <p>KWR <span>430,000~</span></p>
+                                <span id="reservation_selection" onclick="BREAKFAST()">
+                                    객실선택
+                                </span>
+                            </div>
+                        </div>
+                        <span class="rooms_content" id="rooms_content_2">
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img1"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>게스트 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check21" checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check21">
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>270,500~</span></p>
+                                        <span id="reservation_selection" 
+                                        onclick="openCloseToc21()">요금보기</span>
+                                    </div>
+                                </li>
+                                <li id="option2-1" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 270,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 27,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 327,305</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img2"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>디럭스 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check22" checked>
+                                            <label for="first">
+                                                킹
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check22">
+                                            <label for="second">
+                                                트윈
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check22">
+                                            <label for="second">
+                                                프리미엄
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>280,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc22()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option2-2" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 280,500원 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 28,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 339,405</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img4"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>이그젝큐티브</h5>
+                                        <span>
+                                            <input input type="radio" name="check23" checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check23" >
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>331,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc23()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option2-3" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 331,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 69,615</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 401,115</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img6"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>스위트 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check24"  checked>
+                                            <label for="first">
+                                                이그젝큐티브
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check24" >
+                                            <label for="second">
+                                                프리미어
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check24" >
+                                            <label for="second">
+                                                파크힐 듀 플랙스
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>430,000~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc24()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option2-4" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 450,000 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 94,500</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 544,500</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                </li>
+                    <li>
+                        <div class="reservation_rooms">
+                            <div class="reservation_roomsL">
+                                <span>패키지</span>
+                                <h4>Double point</h4>
+                                <p>포인트 2배 / 조식 불포함 / 수영장 + 피트니스</p>
+                                <p>2022.05.01 ~ 2022.12.31</p>
+                                <p><a href="">패키지 상세보기</a></p>
+                            </div>
+                            <div class="reservation_roomsR">
+                                <h6>(1박/1객실)</h6>
+                                <p>KWR <span>430,000~</span></p>
+                                <span id="reservation_selection" onclick="POINT()">객실선택</span>
+                            </div>
+                        </div>
+                        <span class="rooms_content" id="rooms_content_3">
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img1"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>게스트 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check31"  checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check31" >
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>270,500~</span></p>
+                                        <span id="reservation_selection" 
+                                        onclick="openCloseToc31()">요금보기</span>
+                                    </div>
+                                </li>
+                                <li id="option3-1" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 270,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 27,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 327,305</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img2"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>디럭스 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check32" checked>
+                                            <label for="first">
+                                                킹
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check32">
+                                            <label for="second">
+                                                트윈
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check32">
+                                            <label for="second">
+                                                프리미엄
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>280,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc32()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option3-2" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 280,500원 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 28,050</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 339,405</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img4"></figure>
+                                        <p><a href="">
+                                            객실 상세 보기
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>이그젝큐티브</h5>
+                                        <span>
+                                            <input input type="radio" name="check33" checked>
+                                            <label for="first">킹</label>
+                                        </span>
+                                        <span>
+                                            <input input type="radio" name="check33">
+                                            <label for="second">트윈</p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>331,500~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc33()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option3-3" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 331,500 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 69,615</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 401,115</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="rooms_content_img">
+                                        <figure class="rooms_img6"></figure>
+                                        <p><a href="">
+                                            VIEW ROOM DETAILS
+                                        </a></p>
+                                    </div>
+                                    <div class="rooms_content_check">
+                                        <h5>스위트 룸</h5>
+                                        <span>
+                                            <input input type="radio" name="check34" checked>
+                                            <label for="first">
+                                                이그젝큐티브
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <input nput type="radio" name="check34">
+                                            <label for="second">
+                                                프리미어
+                                            </p>
+                                        </span>
+                                        <span>
+                                            <input nput type="radio" name="check34">
+                                            <label for="second">
+                                                파크힐 듀 플랙스
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="rooms_content_price">
+                                        <h6>(1박/1객실)</h6>
+                                        <p>KWR <span>430,000~</span></p>
+                                        <span id="reservation_selection" onclick="openCloseToc34()">
+                                            요금보기
+                                        </span>
+                                    </div>
+                                </li>
+                                <li id="option3-4" class="option">
+                                    <span>
+                                        <h4>옵션사항</h4>
+                                        <ul>
+                                            <li class="option_L">
+                                                <div>
+                                                    <h5>조식</h5>
+                                                    <p>어린이 : 37개월 ~ 13세 / 유아 (무료) : 36개월 이하</p>
+                                                    <p>일자별 (박당) 추가 선택 바랍니다.</p>
+                                                    <div class="reservation_hu border_dash">
+                                                        <p>1박</p>
+                                                        <div>
+                                                            <p>성인</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>2</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                        <div>
+                                                            <p>어린이</p>
+                                                            <span class="reservation_hu_l"></span>
+                                                            <p>0</p>
+                                                            <span class="reservation_hu_r"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5>추가요청사항</h5>
+                                                    <p>성인 3인 (패밀리스위트 5인) 투숙 시, 별도 요금 발생</p>
+                                                    <p>※ 추가 요청 사항은 아래 기재 바랍니다.</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="option_gray"></li>
+                                            <li class="option_R">
+                                                <div class="option_box1">
+                                                    <h6>패키지 명</h6>
+                                                    <p>Hotel ｜ Room Only</p>
+                                                    <h6>게스트 룸</h6>
+                                                    <p>객실1 (성인 2, 어린이 0)</p>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>객실금액</p>
+                                                    </div>
+                                                    <P>KRW 450,000 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <div>
+                                                        <p>옵션</p>
+                                                        <p>조식</p>
+                                                    </div>
+                                                    <P>KRW 0 (1박)</P>
+                                                </div>
+                                                <div class="option_box2 border_dash">
+                                                    <p>세금 및 봉사료</p>
+                                                    <p>KRW 94,500</p>
+                                                </div>
+                                                <div class="option_box3">
+                                                    <p>총 예상 금액</p>
+                                                    <p>KRW 544,500</p>
+                                                </div>
+                                                <span><a href="">
+                                                    예약하기
+                                                </a></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/reservation.js"></script>
+    </main>
+</body>
+</html>

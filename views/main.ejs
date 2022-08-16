@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>밀레니엄 힐튼 서울</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<main>
+    <section class="main_top">
+        <article class="mySwiper1 swiper">
+            <div class="main_top_bannerB swiper-wrapper">
+                <figure class="main_top_banner1 mainSlides swiper-slide fade">
+                    <img src="../img/main_ban1.jpg">
+                </figure>
+                <figure class="main_top_banner2 mainSlides swiper-slide fade">
+                    <img src="../img/main_ban2.jpg">
+                </figure>
+                <figure class="main_top_banner3 mainSlides swiper-slide fade">
+                    <img src="../img/main_ban3.jpg">
+                </figure>
+                <figure class="main_top_banner4 mainSlides swiper-slide fade">
+                    <img src="../img/main_ban4.jpg">
+                </figure>
+            </div>
+            <div class="main_top_ban_textbox">
+                <h2>L I F E    IN    S T Y L E</h2>
+                <div class="main_pagination"></div>
+                <div class = swiper-scrollbar></div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article class="main_top_gray">
+            <ul>
+                <li class="main_choice">
+                    <h6>객실선택</h6>
+                    <select class="main_select">
+                        <option>게스트 룸</option>
+                        <option>디럭스 룸</option>
+                        <option>이그젝큐티브</option>
+                        <option>스위트 룸</option>
+                    </select>
+                </li>
+                <li class="main_checkinout">
+                    <div class="main_checkin">
+                        <h6>체크인</h6>
+                        <div>
+                            <input type="text" id="MainCheakIn" value="2022-06-24" readonly>
+                        </div>
+                    </div>
+                    <span>
+                        <span></span>
+                    </span>
+                    <div class="MainCheakOut">
+                        <h6>체크아웃</h6>
+                        <div>
+                            <input type="text" id="MainCheakOut" value="2022-06-24" readonly>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_peo">
+                    <div>
+                        <h6>성인</h6>
+                        <div class="countNum">
+                            <input type="button" class="minus" onclick="countAdult('minus')">
+                            <h5 class="AdultNum">2</h5>
+                            <input type="button" class="plus" onclick="countAdult('plus')">
+                        </div>
+                    </div>
+                    <div>
+                        <h6>어린이</h6>
+                        <div class="countNum">
+                            <input type="button" class="minus" onclick="countChild('minus')">
+                            <h5 class="childNum">0</h5>
+                            <input type="button" class="plus" onclick="countChild('plus')">
+                        </div>
+                    </div>
+                </li>
+                <li class="main_search">
+                    <button>SEARCH</button>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section class="main_swiper main_w1200">
+        <div>
+            <span></span>
+            <h2>OFFERS</h2>
+            <span></span>
+        </div>
+        <article class="main_offer">
+            <div class="mySwiper2 swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="offerIn1">
+                        <h4>01</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Hilton Honors Discount Breakfast Included</h4>
+                        <h5>힐튼 아너 할인 조식 포함</h5>
+                        <p>투숙 최대 1일 전까지 변경 또는 취소 가능.<br>조식 포함. 힐튼 Honors 회원 전용.</p>
+                        <figure class="main_offer_img1">
+                        </figure>
+                    </a></li>
+                    <li class="swiper-slide"><a href="offerIn2">
+                        <h4>02</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Breakfast included</h4>
+                        <h5>조식포함</h5>
+                        <p>투숙 최대 1일 전까지 변경 또는 취소 가능.<br>
+                            조식 포함.</p>
+                        <figure class="main_offer_img2">
+                        </figure>
+                    </a></li>
+                    <li class="swiper-slide"><a href="offerIn3">
+                        <h4>03</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Pre-paid breakfast included</h4>
+                        <h5>사전결제 조식포함</h5>
+                        <p>조식 포함. 취소 불가. 바로 결제.<br>
+                            더블 힐튼 Honors 포인트 적립.</p>
+                        <figure class="main_offer_img3">
+                        </figure>
+                    </a></li>
+                    <li class="swiper-slide"><a href="offerIn4">
+                        <h4>04</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Sweeten Your Stay</h4>
+                        <h5>스위튼 유어 스테이</h5>
+                        <p>무료 조식. 체크아웃 시 호텔 운영 서비스 25% 할인.<br>
+                            객실 요금 제외.</p>
+                        <figure class="main_offer_img4">
+                        </figure>
+                    </li>
+                    <li class="swiper-slide"><a href="offerIn5">
+                        <h4>05</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Honors Advance Purchase Breakfast Included</h4>
+                        <h5>힐튼 아너 사전 구매 조식 포함</h5>
+                        <p>조식 포함. 취소 불가. 바로 결제.<br>
+                            힐튼 Honors 회원 전용.</p>
+                        <figure class="main_offer_img5">
+                        </figure>
+                    </a></li>
+                    <li class="swiper-slide"><a href="offerIn6">
+                        <h4>06</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Double Points</h4>
+                        <h5>포인트 2배</h5>
+                        <p>투숙 최대 1일 전까지 변경 또는 취소 가능.<br>
+                            더블 힐튼 Honors 포인트 적립.</p>
+                        <figure class="main_offer_img6">
+                        </figure>
+                    </a></li>
+                    <li class="swiper-slide"><a href="offerIn7">
+                        <h4>07</h4>
+                        <h6>Millennium Hilton Seoul</h6>
+                        <h4>Piccance Package</h4>
+                        <h5>픽캉스 패키지</h5>
+                        <p>피크닉 세트 및 맞춤형 힐튼 캔버스 가방 최대 25% 할인</p>
+                        <figure class="main_offer_img7">
+                        </figure>
+                    </a></li>
+                </ul>
+            </div>
+            <span class="swiper-button-prev main_arrowL"></span>
+            <span class="swiper-button-next main_arrowR"></span>
+            <div class="spin_bar"></div>
+        </article>
+        <article class="main_offerM">
+            <span class="main_arrowM main_arrowL" onclick="plusSlides2(-1)"></span>
+            <ul>
+                <li class="main_offerMLI"><a href="offerIn1">
+                    <figure class="main_offer_img1"></figure>
+                    <div>
+                        <h5>01</h5>
+                        <h6>Hilton Honors Discount Breakfast</h6>
+                        <p>힐튼 아너 할인 조식 포함</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn2">
+                    <figure class="main_offer_img2"></figure>
+                    <div>
+                        <h5>02</h5>
+                        <h6>Breakfast included</h6>
+                        <p>조식 포함</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn3">
+                    <figure class="main_offer_img3"></figure>
+                    <div>
+                        <h5>03</h5>
+                        <h6>Pre-paid breakfast included</h6>
+                        <p>사전결제 조식포함</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn4">
+                    <figure class="main_offer_img4"></figure>
+                    <div>
+                        <h5>04</h5>
+                        <h6>Sweeten Your Stay</h6>
+                        <p>스위튼 유어 스테이</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn5">
+                    <figure class="main_offer_img5"></figure>
+                    <div>
+                        <h5>05</h5>
+                        <h6>Honors Advance Purchase Breakfast Included</h6>
+                        <p>힐튼 아너 사전 구매 조식 포함</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn6">
+                    <figure class="main_offer_img6"></figure>
+                    <div>
+                        <h5>06</h5>
+                        <h6>Pre-paid breakfast included</h6>
+                        <p>포인트 2배</p>
+                    </div>
+                </a></li>
+                <li class="main_offerMLI"><a href="offerIn7">
+                    <figure class="main_offer_img7"></figure>
+                    <div>
+                        <h5>07</h5>
+                        <h6>Piccance Package</h6>
+                        <p>픽캉스 패키지</p>
+                    </div>
+                </a></li>
+            </ul>
+            <span class="main_arrowM main_arrowR" onclick="plusSlides2(1)">
+            </span>
+        </article>
+        <span class="spin_barM">
+            <span class="spin_barMdot offdot"onclick="currentSlide2(1)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(2)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(3)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(4)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(5)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(6)"></span>
+            <span class="spin_barMdot offdot" onclick="currentSlide2(7)"></span>
+        </span>
+    </section>
+    <section class="main_w1200 main_roomtype">
+        <div>
+            <span></span>
+            <h2>ROOMTYPE</h2>
+            <span></span>
+        </div>
+        <article class="main_roomtype_wrap">
+            <ul>
+                <li class="tablinks" onclick="openCity(event, 'Guest')" id="Gueststyle">
+                    Guest Room
+                </li>
+                <span>|</span>
+                <li class="tablinks" onclick="openCity(event, 'Deluxe')" id="Deluxestyle">
+                    Deluxe Mountain View
+                </li>
+                <span>|</span>
+                <li class="tablinks" onclick="openCity(event, 'Premium')" id="Premiumstyle">
+                    Premium Deluxe Room
+                </li>
+                <span>|</span>
+                <li class="tablinks" onclick="openCity(event, 'Executive')"id="Executivestyle">
+                    Executive
+                </li>
+                <span>|</span>
+                <li class="tablinks" onclick="openCity(event, 'ExecutiveM')"id="ExecutiveMstyle">
+                    Executive Mountain View
+                </li>
+                <span>|</span>
+                <li class="tablinks" onclick="openCity(event, 'Suite')"id="Suitestyle">
+                    Suite Room
+                </li>
+            </ul>
+            <figure id="Guest" class="tabcontent"></figure>
+            <figure id="Deluxe" class="tabcontent"></figure>
+            <figure id="Premium" class="tabcontent"></figure>
+            <figure id="Executive" class="tabcontent"></figure>
+            <figure id="ExecutiveM" class="tabcontent"></figure>
+            <figure id="Suite" class="tabcontent"></figure>
+            <button type="button" class="navyBtn" onClick="location.href='room'">MORE</button>
+        </article>
+        <article class="main_roomtypeM">
+            <span class="main_arrowM main_arrowL" onclick="plusSlides3(-1)"></span>
+            <ul>
+                <li class="main_roomtypeLI"><a a href="king_guest_room">
+                    <figure id="Guest"></figure>
+                    <div>
+                        <h5>Guest room</h5>
+                        <h6>도심 속 남산의 자연과 어우러진 밀레니엄 힐튼 서울 게스트 룸은 넓고 채광이 뛰어나며, 전체적으로 차분한 톤의 느낌을 선사합니다.</h6>
+                    </div>
+                </a></li>
+                <li class="main_roomtypeLI"><a href="king_deluxe_mountain">
+                    <figure id="Deluxe"></figure>
+                    <div>
+                        <h5>Deluxe Mountain View</h5>
+                        <h6>도심 속 남산의 자연과 어우러진 디럭스 남산 뷰 룸은 넓고 채광이 뛰어나며 세련된 분위기를 자아냅니다.</h6>
+                    </div>
+                </a></li>
+                <li class="main_roomtypeLI"><a href="family_premium_deluxe">
+                    <figure id="Premium"></figure>
+                    <div>
+                        <h5>Premium Deluxe Room</h5>
+                        <h6>도심 속 여유를 만끽할 수 있는 패밀리 프리미엄 디럭스 룸은 침실과 응접실이 분리되어 있어 보다 넓고 쾌적한 서비스를 제공합니다.</h6>
+                    </div>
+                </a></li>
+                <li class="main_roomtypeLI"><a href="king_executive">
+                    <figure id="Executive"></figure>
+                    <div>
+                        <h5>Executive</h5>
+                        <h6>포근함을 선사하는 황금베이지색 실내장식으로 이그제큐티브 룸은 넓고 채광이 뛰어나며, 전체적으로 따스하고 아늑한 느낌을 선사합니다.</h6>
+                    </div>
+                </a></li>
+                <li class="main_roomtypeLI"><a href="king_executive_mountain">
+                    <figure id="ExecutiveM"></figure>
+                    <div>
+                        <h5>Executive Mountain View</h5>
+                        <h6>포근함을 선사하는 황금베이지색 실내장식으로 이그제큐티브 남산뷰 룸은 넓고 채광이 뛰어나며, 전체적으로 따스하고 아늑한 느낌을 선사합니다.</h6>
+                    </div>
+                </a></li>
+                <li class="main_roomtypeLI"><a href="parkhill_duplex_suite">
+                    <figure id="Suite"></figure>
+                    <div>
+                        <h5>Suite Room</h5>
+                        <h6>별도의 거실과 고급스러운 욕실 시설로 이루어져 있는 스위트 룸은 아침 식사를 포함한 이그제큐티브 라운지의 고품격 서비스를 제공 받으실 수 있습니다.</h6>
+                    </div>
+                </a></li>
+            </ul>
+            <span class="main_arrowM main_arrowR" onclick="plusSlides3(1)"></span>
+        </article>
+        <span class="spin_barM">
+            <span class="spin_barMdot roodot" onclick="currentSlide3(1)"></span>
+            <span class="spin_barMdot roodot" onclick="currentSlide3(2)"></span>
+            <span class="spin_barMdot roodot" onclick="currentSlide3(3)"></span>
+            <span class="spin_barMdot roodot" onclick="currentSlide3(4)"></span>
+            <span class="spin_barMdot roodot" onclick="currentSlide3(5)"></span>
+            <span class="spin_barMdot roodot" onclick="currentSlide3(6)"></span>
+        </span>
+    </section>
+    <section class="main_w100">
+        <article class="main_w1200 promo_art">
+            <h2>PROMOTION</h2>
+            <ul class="promo_nav">
+                <li id="promo_navALL" class="promo_navli">ALL</li>
+                <span>|</span>
+                <li id="promo_navLOG" class="promo_navli">LOGMENT</li>
+                <span>|</span>
+                <li id="promo_navDIN" class="promo_navli">DINING</li>
+            </ul>
+            <ul class="promo_Pri">
+                <li class="promo_content promo_PriL promo_PrALL"><a href="event_detail_pic">
+                    <figure class="promo_Pri_img2">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION LOGMENT</p>
+                        <h6>도심 속 감성 피크닉, 픽캉스 패키지</h6>
+                        <h5>70,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriD promo_PrALL"><a href="event_detail_tea_set">
+                    <figure class="promo_Pri_img1">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION DINING</p>
+                        <h6>푸른빛 여름바다를 담은, 썸머 블루 애프터눈 티 세트</h6>
+                        <h5>49,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriD promo_PrALL"><a href="event">
+                    <figure class="promo_Pri_img3">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION DINING</p>
+                        <h6>오크룸 야외테라스에서 즐기는 BBQ 부페</h6>
+                        <h5>65,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriD promo_PrALL"><a href="event">
+                    <figure class="promo_Pri_img5">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION DINING</p>
+                        <h6>실란트로 델리, 스페셜티 빙수</h6>
+                        <h5>49,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriD promo_PrALL"><a href="event">
+                    <figure class="promo_Pri_img4">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION DINING</p>
+                        <h6>Bistro 50, 스페셜 페어링 세트</h6>
+                        <span>SPECIAL PRICE</span>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriL"><a href="event">
+                    <figure class="promo_Pri_img6">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION LOGMENT</p>
+                        <h6>호주 와인 프로모션, Australian Wine Promotion</h6>
+                        <span>SPECIAL PRICE</span>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriL"><a href="event">
+                    <figure class="promo_Pri_img7">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION LOGMENT</p>
+                        <h6>설레는 가족 호캉스, 맘 앤 키즈 패키지</h6>
+                        <h5>280,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriL"><a href="event">
+                    <figure class="promo_Pri_img8">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION LOGMENT</p>
+                        <h6>반려동물과 함께 떠나는 럭셔리 펫캉스, VIP 패키지</h6>
+                        <h5>250,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriL"><a href="event">
+                    <figure class="promo_Pri_img9">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION LOGMENT</p>
+                        <h6>스위트 룸에서 즐기는 럭셔리 호캉스, 듀플렉스 스위트 패키지</h6>
+                        <h5>90,000 WON</h5>
+                    </div>
+                </a></li>
+                <li class="promo_content promo_PriD"><a href="event">
+                    <figure class="promo_Pri_img10">
+                    </figure>
+                    <div class="promo_Pri_txt">
+                        <p>HILTION DINING</p>
+                        <h6>구상노사카바에서 만나는 민어 특선 요리</h6>
+                        <h5>85,000 WON</h5>
+                    </div>
+                </a></li>
+            </ul>
+            <button type="button" class="navyBtn" onClick="location.href='event'">MORE</button>
+        </article>
+    </section>
+    <section class="main_w1200">
+        <h2>#HILTION</h2>
+        <article class="main_insta">
+            <div>
+                <figure class="main_insta_img1">
+                    <a href="https://www.instagram.com/p/CdvZR_mMK3L/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>Located on the secluded Busan coastline, find serenity</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+            </div>
+            <div>
+                <figure class="main_insta_img2">
+                    <a href="https://www.instagram.com/p/Cc6DNnDlPPK/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>Take in some of Italy’s most stunning views</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+                <figure class="main_insta_img3">
+                    <a href="https://www.instagram.com/p/CbyN_LDuIXm/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>Don’t forget to treat yourself to a much deserved spa day at the @hiltonportogaia wellness center, after exploring the historic charm of Portugal.</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+                <figure class="main_insta_img4">
+                    <a href="https://www.instagram.com/p/CbP4JiiAi34/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>We’ve got more beach-trip planning inspiration for you! Especially if you’re West Coast dreaming…</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+            </div>
+            <div>
+                <figure class="main_insta_img5">
+                    <a href="https://www.instagram.com/p/CX_rEVXpVGP/?utm_source=ig_web_copy_link" target="_blank"> 
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>The bustling charm of Arlington, the low-lit gastro pubs of Brighton, the mountainous escape that is Niseko Village; these hidden gem "second cities" are only a quick drive from the major metropolitan centers nearby, and provide the best of local culture.</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+                <figure class="main_insta_img6">
+                    <a href="https://www.instagram.com/p/CTzvpvIlcXF/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>From elaborate Baroque-era ornamentation to 20th century modernism, the city of Vienna boasts a rich architectural history. Get comfortable on our deck and take it all in.</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+            </div>
+            <div>    
+                <figure class="main_insta_img7">
+                    <a href="https://www.instagram.com/p/CSADvRxMHRQ/?utm_source=ig_web_copy_link" target="_blank">
+                    <span></span>
+                    <figcaption>
+                        <div class="main_instaLine">
+                          <span>
+                            <p>Dive into your very own piece of paradise at @hiltonrosehall. 📸 @bennibennassy</p>
+                          </span>
+                        </div>
+                      </figcaption>
+                </a></figure>
+            </div>
+        </article>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</main>

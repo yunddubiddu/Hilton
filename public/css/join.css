@@ -1,0 +1,265 @@
+.join {
+  background-color: #eeece7;
+  padding: 100px 0;
+}
+
+
+.w1200 {
+  width: 1200px;
+  margin: auto;
+}
+
+.m8 {
+  margin-bottom: 8px;
+}
+
+/*****************************join_title********************************/
+
+.join_title>h2 {
+  color: #000;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.join_route {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.join_route>figure {
+  margin: 0 15px;
+}
+
+.join_circle {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.active_join {
+  background-color: #19344D;
+  color: #fff;
+}
+
+
+
+/****************************join_content********************************/
+
+.join_content {
+  width: 83.33%;
+  background-color: #fff;
+  margin: auto;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.join_content>h3 {
+  font-size: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #B0AFAF;
+  margin-bottom: 50px;
+}
+
+.join_items>li {
+  display: flex;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.join_items>li>label {
+  width: 20%;
+  min-width: 110px;
+  line-height: 40px;
+  position: relative;
+}
+
+.nec::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  width: 3px;
+  height: 3px;
+  background-color: #eb6767;
+}
+
+.join_items>li>div {
+  display: flex;
+  vertical-align: middle;
+}
+
+
+.join_input {
+  width: 530px;
+}
+
+
+.join_input>input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #B0AFAF;
+  background-color: transparent;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+
+.join_btn {
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: 1px solid #B0AFAF;
+  background-color: transparent;
+  color: #494949;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.join_mail>input {
+  width: 33%;
+}
+
+.join_mail>p {
+  margin: 0 5px;
+  line-height: 40px;
+}
+
+
+.join_dropbox {
+  width: 33.33%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #B0AFAF;
+  appearance: none;
+  position: relative;
+  background: url('../img/drop_arrow.png') no-repeat 95% 50%; 
+  background-size: 15px;
+}
+
+.join_submit {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.join_submit>input {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(118,118,118);
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.join_submit>input:hover {
+  background-color: rgb(118,118,118);
+  color: #fff;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .w1200 {
+      width: 100%;
+  }
+
+  /*max-width: 1200px*/
+}
+
+@media only screen and (max-width: 900px) {
+
+  /*max-width: 900px*/
+}
+
+@media only screen and (max-width: 768px) {
+
+  .join {
+      padding: 50px 0;
+  }
+
+  .join_title>h2 {
+      font-size: 24px;
+  }
+
+  .join_route {
+      margin: 25px auto;}
+      
+  .join_circle {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;}
+  
+  .join_content {
+      width: 100%;
+      padding: 50px 30px;
+      box-sizing: border-box;
+  }
+
+  .join_content>h3 {
+      font-size: 24px;
+      margin-bottom: 25px;}
+
+  .join_items>li {
+      flex-wrap: wrap;
+      display: flex;
+      height: fit-content;
+      margin-bottom: 20px;
+  }
+  .join_items>li>label {
+      width: 100%;
+      line-height: 40px;
+  }
+  
+  .join_items>li>div {
+      width: 100%;
+  }
+
+  .join_dropbox {
+      height: 40px;
+      width: 100%;
+  }
+
+  #joingender, #joinAddress {
+      width: 100%;
+  }
+
+  #joinmail {
+      width: 33.33%;
+  }
+
+  .join_submit {
+      margin-top: 25px;}
+
+  .join_btn, .join_input>input, .join_submit>input, .join_dropbox {
+    font-size: 14px;}
+  
+
+  /*max-width: 768px*/
+}
+
+@media only screen and (max-width: 375px) {
+
+  .join { 
+      font-size: 14px;}
+
+  .join_content {
+      width: 100%;
+      padding: 50px 15px;}
+
+  /*max-width: 375px*/
+}

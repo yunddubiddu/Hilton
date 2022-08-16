@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+
+a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+p,em,h3{
+    color:#494949;
+    letter-spacing: 1px;
+}
+.event_sec1440{
+    width: 1440px;
+    margin: auto;
+}
+.e_inner{
+    width: 1200px;
+    margin: auto;
+    
+}
+.event_img>h1{
+    display: block;
+    font-size: 59px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-align: center;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-image: url(../Img/jens-thekkeveettil-dBWvUqBoOU8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    margin-bottom: 100px;
+}
+.e_icons{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.e_icons>h2{
+    font-size: 34px;
+}
+.e_icons>div>span{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*****************sec2*************************/
+
+.e_all_wrap{
+    display: flex;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.e_left_box{
+    width: 30%;
+}
+.e_left_box>img{
+    width: 100%;
+
+}
+.e_right_box{
+    width: 70%;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.e_right_box>h2{
+    font-size: 34px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    letter-spacing: 5%;
+}
+.e_txt_intro{
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.e_txt_intro>p{
+    letter-spacing: 5%;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+.e_txt_notice{
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.e_txt_notice>p{
+    letter-spacing: 5%;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+/***********sec3******************/
+
+
+.e_notice_area{
+    margin-top: 50px;
+    width: 100%;
+    padding: 50px 0 50px 50px;
+    box-sizing: border-box;
+    background-color: rgba(238, 236, 231, 0.5);
+
+}
+.e_detail_area,.e_num_area{
+    display: flex;
+
+}
+
+.e_num_area{
+    margin-top: 30px;
+}
+.e_detail_area>span{
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.e_num_area>span{
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.e_more>div{
+    border-top: 1px solid black;
+    margin-bottom: 100px;
+}
+.e_more>div>button{
+    margin-top: 100px;
+    display: block;
+    padding:8px 30px;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid #B0AFAF;
+    background-color: white;
+}

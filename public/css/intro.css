@@ -1,0 +1,279 @@
+
+.intro { 
+    letter-spacing: 1px;
+    color: #494949;}
+
+.intro>section {
+    margin-top: 100px;
+}
+
+.w1200 {
+    width: 1200px;
+    margin: auto;
+}
+
+.info_txtbox span {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+/************************first section************************/
+
+.intro_title h1 {
+    font-size: 59px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/************************second section************************/
+
+.value_wrap {
+    position: relative;
+}
+
+
+.sub_title>h2 {
+    font-size: 34px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.value_wrap ul {
+    padding-top: 11.41%;
+    padding-bottom: 11.41%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.value_wrap ul>li {
+    width: 16.66%;
+}
+
+.value_wrap ul>li>h3 {
+    font-size: 110px;
+    color: #000;
+}
+
+.value_wrap ul>li>p {
+    margin-bottom: 15px;
+}
+
+.value_wrap ul>li>div>span {
+    display: inline-block;
+}
+
+.value_wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 55.08%;
+    background-image: url('../img/intro_img1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/************************third section************************/
+
+.service_img_wrap {
+    margin-top: 50px;
+    display: flex;
+}
+
+.service_img_wrap>div {
+    width: 50%;
+}
+
+.service_left {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #EEECE7;
+}
+
+.service_left>img {
+    width: 30%;
+    padding-bottom: 25%;
+    background-image: url('../img/intro_hilton_logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.service_text {
+    margin-top: 30px;
+}
+
+.service_right {
+    width: 100%;
+    background-image: url('../img/service_img.png');
+    background-size:cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/************************fourth section************************/
+
+.hotel_resort {
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-image: url('../img/intro_hotel_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hotel_resort>article {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.resort_logo {
+    width: 20%;
+    margin: 50px auto 0;
+}
+
+.resort_logo>div {
+    width: 100%;
+    padding-bottom: 60%;
+    background-image: url('../img/resort_logo.png');
+    background-size: cover;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .w1200 {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .hotel_resort>.sub_title {
+        padding: 70px 30px;
+    }
+
+    /*max-width: 1200px*/
+  }
+@media only screen and (max-width: 900px) {
+
+    .service_img_wrap {
+        flex-wrap: wrap;
+    }
+
+    .service_img_wrap>div {
+        width: 100%;
+    }
+
+    .service_right {
+        padding-bottom: 100%;
+    }
+
+    .value_wrap ul>li>div>span {
+        display: block;
+        }
+
+    /*max-width: 900px*/
+  }
+@media only screen and (max-width: 768px) {
+
+    .intro { 
+        letter-spacing: 0px;}
+
+    .intro>section {
+        margin-top: 50px;
+    }
+
+    .intro_title h1 {
+        font-size: 30px;
+    }
+
+    .sub_title>h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .value_wrap>ul {
+        flex-direction: column;
+        text-align: left;
+        padding-top: 5%;
+    }
+
+    .value_wrap ul>li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .value_wrap ul>li>h3 {
+        display: none;
+    }
+
+    .value_wrap ul>li>div>span {
+        display: inline-block;
+    }
+
+    .value_wrap ul>li>p {
+        margin-bottom: 8px;
+    }
+
+    .value_wrap ul>li>p>em {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        vertical-align: baseline;
+    }
+
+    .service_img_wrap {
+        margin-top: 25px;
+        padding: 25px 0;
+    }
+
+    .resort_logo {
+        width: 30%;
+        margin: 15px auto 0;
+    }
+
+    .mt30 {
+    margin-top: 15px;
+}
+
+.m_mt20 {
+    margin-top: 20px;
+}
+
+    /*max-width: 768px*/
+  }
+@media only screen and (max-width: 400px) {
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .w1200 {
+        padding: 0 15px;}
+
+
+    /*max-width: 400px*/
+  }

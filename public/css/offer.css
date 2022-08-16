@@ -1,0 +1,170 @@
+.offer_ban{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    background-image: url(../img/hotel_service_20191209111439_main_pc.jpg);
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+}
+.offer_ban>h2{
+    width: 100%;
+    padding-top: 6%; padding-bottom: 6%; 
+    background-color:rgba(0,0,0,0.3);
+    font-size: 59px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: #fff;
+    text-align: center;
+}
+.offer_sec{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.offer_art{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B0AFAF;
+}
+.offer_art>h3{
+    font-size: 34px;
+    color: #494949;
+}
+.offer_art>div{
+    display: flex;
+    align-items: center;
+}
+.offer_art>div>span{
+    display: block;
+    width: 24px; height: 24px;
+    background-size: cover;
+    background-position: center center;
+}
+.off_share{
+    background-image: url(../img/share.png);
+    margin-right: 20px;
+}
+.off_print{
+    background-image: url(../img/print.png);
+}
+/***/
+.offer_sec>ul>li>a{
+    display: flex;
+    border-bottom: 1px solid #B0AFAF;
+    margin-bottom: 25px;
+    padding: 25px 10px;
+    box-sizing: border-box;
+}
+.offer_sec>ul>li>a>figure{
+    width: 35%;
+    padding-top: 20%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+    border: 1px solid #e9e9e9;
+}
+.offerImg1{
+    background-image: url(../img/main_offer_img1.jpg);
+}
+.offerImg2{
+    background-image: url(../img/main_offer_img2.jpg);
+}
+.offerImg3{
+    background-image: url(../img/main_offer_img3.jpg);
+}
+.offerImg4{
+    background-image: url(../img/main_offer_img4.jpg);
+}
+.offerImg5{
+    background-image: url(../img/main_offer_img5.jpg);
+}
+.offerImg6{
+    background-image: url(../img/main_offer_img6.png);
+}
+.offerImg7{
+    background-image: url(../img/main_offer_img7.jpg);
+}
+.offerTxt{
+    align-self: center;
+    color: #494949;
+}
+.offerTxt>h6{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.offerTxt>h5{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.offerTxt>p{
+    font-size: 14px;
+    color: #B0AFAF;
+    margin-top: 15px;
+}
+.offer_sec>.e_inner>.e_all_wrap>.e_left_box{
+    border: 1px solid #B0AFAF;
+}
+@media screen and (max-width: 1200px) {
+    .offer_sec{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 900px) {
+    .offer_ban{
+        margin-bottom: 50px;
+    }
+    .offer_sec>ul>li>a{
+        flex-direction: column;
+    }
+    .offer_sec>ul>li>a>figure{
+        width: 100%;
+        padding-top: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 0;
+        border: 1px solid #e9e9e9;
+    }
+    .offerTxt{
+        width: 100%;
+        align-self: flex-start;
+        padding-top: 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .offer_ban>h2 {
+        padding-top: 12%;
+        padding-bottom: 12%;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .offerTxt{
+        color: #494949;
+    }
+    .offer_art>h3{
+        font-size: 24px;
+    }
+    .offerTxt>h6{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .offerTxt>h5{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .offerTxt>p{
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .offer_sec{
+        padding: 0 15px;
+    }
+}

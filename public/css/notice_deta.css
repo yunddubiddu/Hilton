@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+/****/
+.notice_deta {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px 100px;
+}
+.notice_deta_top {
+  display: flex;
+  padding: 22px 30px;
+  box-sizing: border-box;
+  border-top: 2px solid #b0afaf;
+  border-bottom: 1px solid #b0afaf;
+  align-items: center;
+}
+#notice_menu {
+  width: 15%;
+}
+#notice_title {
+  width: 85%;
+}
+.notice_deta_top > h4:first-child {
+  position: relative;
+}
+.notice_deta_top > h4:first-child::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  bottom: -10%;
+  width: 2px;
+  height: 30px;
+  background-color: #eeece7;
+}
+.notice_deta_top > h4 {
+  color: #494949;
+}
+.notice_deta_top > h4:nth-child(2) {
+  font-size: 20px;
+}
+.notice_deta_body {
+  border-bottom: 1px solid #b0afaf;
+  padding: 50px 15px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.notice_deta_body > p {
+  font-size: 14px;
+  color: #494949;
+}
+
+/**/
+.notice_deta_bottom {
+  display: flex;
+  justify-content: center;
+}
+.notice_deta_bottom > a > p {
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 30px;
+  border: 1px solid #494949;
+  color: #494949;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.notice_deta_bottom > a :hover {
+  background-color: rgb(118, 118, 118);
+  color: white;
+}
+.notice_btn1 {
+  display: flex;
+  justify-content: right;
+}
+.notice_btn1 > input {
+  background-color: #19344d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 2px;
+}
+/* --------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .notice_deta_top > h4:nth-child(2) {
+    font-size: 16px;
+  }
+  .notice_deta_top > h4:first-child {
+    display: none;
+  }
+  #notice_title {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .notice_deta {
+    padding: 20px 15px 50px;
+  }
+  .notice_deta_top {
+    padding: 12px 10px;
+  }
+  .notice_deta_top > h4:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .notice_deta_body {
+    border-bottom: 1px solid #b0afaf;
+    padding: 20px 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .notice_deta_bottom > a > p {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+}

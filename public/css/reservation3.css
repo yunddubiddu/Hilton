@@ -1,0 +1,110 @@
+.res3_gray{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #eeece7;
+}
+.res3_grayart{
+    width: 1200px;
+    margin: auto;
+}
+.res3_grayart>h2{
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+.reservation3_ing{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.reservation3_ing>li{
+    width: 130px;
+}
+.reservation3_ing>li>span{
+    display: block;
+    margin: auto; margin-bottom: 8px;
+    width: 60px; height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #eeece7;
+    text-align: center;
+    line-height: 60px;
+    color: #494949;
+}
+.reservation3_ing>li:last-child>span{
+    background-color: #003F90;
+    color: #fff;
+}
+.reservation3_ing>li>div{
+    text-align: center;
+    color: #494949;
+}
+.res_complete{
+    width: 100%;
+    padding: 50px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.res_completeImg{
+    width: 60px; height: 60px;
+    margin: auto;   margin-bottom: 25px;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-image: url("../img/completeIco.png");
+}
+.res_complete>h6{
+    font-size: 24px;
+    color: #494949;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.res_complete>p{
+    text-align: center;
+    color: #494949;
+    margin-bottom: 50px;
+}
+.res_button{
+    display: flex;
+    justify-content: center;
+}
+.res_button>button{
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #494949;
+    border: 1px solid rgb(118, 118, 118);
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.3s;
+}    
+.res_button>button:hover{
+    background-color: rgb(118, 118, 118);
+    color: #fff;
+}
+@media screen and (max-width: 1200px) {
+    .res3_grayart{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 768px) {
+    .res_button>button{
+        font-size: 14px;
+    }
+    .reservation3_ing>li>div{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .res3_grayart{
+        padding: 0 15px;
+    }
+    .res_complete>p{
+        font-size: 14px;
+    }
+
+}

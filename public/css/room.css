@@ -1,0 +1,408 @@
+/*---------------------------------------------------------guestroom */
+.room_s {
+  display: block;
+  padding: 0;
+}
+.selectbox_room {
+  display: none;
+}
+.rooms_btn {
+  display: flex;
+  max-width: 1440px;
+  text-align: center;
+  padding: 30px 120px;
+  margin: auto;
+}
+.rooms_btn button {
+  font-family: "Noto serif Kr";
+  font-size: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #494949;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.rooms_btn button::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  margin-left: 15px;
+  background: #ccc;
+  vertical-align: middle;
+}
+.rooms_btn button:hover {
+  font-weight: bold;
+}
+
+.rooms_title {
+  width: 100%;
+  background-image: url(../img/rooms_title.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.title_59px {
+  padding: 6% 0;
+  width: 100%;
+  font-size: 59px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: 8px;
+}
+.propertyList {
+  overflow: hidden;
+}
+.propertyList > li {
+  position: relative;
+  padding-bottom: 50px;
+}
+.propertyList > li:nth-child(odd):before {
+  background-color: #19344d;
+}
+.propertyList > li:nth-child(even):before {
+  background: #e6e3db;
+}
+.infoCont {
+  display: block;
+  padding-top: 160px;
+}
+.color_black {
+  color: #494949;
+}
+.color_white {
+  color: #fff;
+}
+.room_textbox > h3 {
+  font-size: 59px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.room_textbox > p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.room_textbox {
+  padding: 50px 50px 50px 0;
+}
+.room_detail_w {
+  width: 90px;
+  padding: 9px 30px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.room_detail_w:hover {
+  background-color: #eeece7;
+  color: #000000;
+}
+.room_detail_b {
+  width: 90px;
+  padding: 9px 30px;
+  text-align: center;
+  border: 1px solid #494949;
+  color: #494949;
+  transition: 0.3s;
+}
+.room_detail_b:hover {
+  background-color: #19344d;
+  color: #eeece7;
+}
+.king_guest_img {
+  background-image: url(../img/king-guest-room-evening.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.twin_guest_img {
+  background-image: url(../img/twin-guest-room-day.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.king_deluxe_img {
+  background-image: url(../img/king-deluxe-mt-view-evening.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.twin_deluxe_img {
+  background-image: url(../img/twin-deluxe-mt-view-evening.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.family_deluxe_img {
+  background-image: url(../img/family-premium-deluxe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+.propertyList > li:nth-child(odd) .inner:after {
+  right: -3080px;
+}
+.propertyList > li:nth-child(even) .inner:after {
+  left: -3080px;
+}
+.propertyList > li .inner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 3200px;
+  height: 100%;
+  background: #fff;
+}
+
+.propertyList > li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 860px;
+}
+.inner {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+  color: white;
+}
+.propertyList > li:nth-child(even) .room_textbox {
+  padding-left: 100px;
+}
+
+/* ---------------------------------------------------------suite */
+
+.parkhill_duplex_suite_r {
+  background-image: url(../img/parkhill-suite-bedroom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.king_suite_img {
+  background-image: url(../img/executive-suite-bedroom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.king_pre_img {
+  background-image: url(../img/selhitw-premiersuite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.vista_duplex_img {
+  background-image: url(../img/vista-suite-bedroom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+.nam_duplex_suite_img {
+  background-image: url(../img/namdaemun-suite-living-room.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+/* -------------------------------------------------------------executive */
+
+.king_exe_img {
+  background-image: url(../img/selhitw-executiveking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+.king_moun_img {
+  background-image: url(../img/selhitw-executivemountainking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+.twin_exe_img {
+  background-image: url(../img/selhitw-executivetwin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+.twin_moun_img {
+  background-image: url(../img/selhitw-executivemountaintwin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 650px;
+}
+
+/* ----------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+  .rooms_title {
+    display: none;
+  }
+  .rooms_btn {
+    display: none;
+  }
+  .selectbox_room {
+    display: flex;
+    justify-content: end;
+    height: 40px;
+  }
+  .color_white {
+    color: #494949;
+  }
+
+  #select {
+    font-family: "Noto Serif KR";
+    width: 160px;
+    border: none;
+  }
+  .tab_right {
+    text-align: right;
+  }
+  .btn-secondary {
+    color: #494949;
+    background-color: #fff;
+    border: 0;
+  }
+  .btn-secondary:hover {
+    color: #494949;
+    background-color: #fff;
+    border: 0;
+  }
+  .propertyList > li {
+    padding-bottom: 0;
+  }
+  .propertyList > li:nth-child(odd) .inner:after {
+    right: 0;
+  }
+  .propertyList > li:nth-child(even) .inner:after {
+    left: 0;
+  }
+  .propertyList > li:before {
+    height: 320px;
+  }
+  .propertyList > li .inner:after {
+    display: none;
+  }
+  .propertyList > li:nth-child(even) .room_textbox {
+    padding-left: 0;
+  }
+  .infoCont {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+  .inner {
+    max-width: 1200px;
+    padding: 30px;
+  }
+  .room_textbox {
+    color: #494949;
+  }
+  .room_textbox > span {
+    background-color: #eeece7;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+  .room_textbox > h3 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+  }
+  .room_textbox > p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .room_detail_w {
+    border: 1px solid #494949;
+    color: #494949;
+  }
+  .img_resize {
+    height: 0;
+    padding: 30% 0;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    padding: 15px;
+  }
+  .room_textbox > h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .room_textbox > p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .img_resize {
+    padding: 40% 0;
+  }
+  .propertyList > li:before {
+    height: 0;
+    padding: 20% 0;
+  }
+  .room_detail_w {
+    width: 90px;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .rooms_btn_m {
+    padding: 14px 0;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .rooms_btn_m {
+    font-size: 12px;
+    width: 140px;
+  }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/intro.css">
+    <link rel="stylesheet" href="../css/event.css">
+    <link rel="stylesheet" href="../css/event_detail_pic.css">
+    <link rel="stylesheet" href="../css/event_detail_tea Set.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/notice.css">
+    <link rel="stylesheet" href="../css/notice_deta.css">
+    <link rel="stylesheet" href="../css/noticeDetail.css">
+    <link rel="stylesheet" href="../css/updatenoti.css">
+    <link rel="stylesheet" href="../css/write.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/reservation2.css">
+    <link rel="stylesheet" href="../css/room.css">
+    <link rel="stylesheet" href="../css/roomdetail.css">
+    <link rel="stylesheet" href="../css/room_imgurl.css">
+    <link rel="stylesheet" href="../css/join_agree.css">
+    <link rel="stylesheet" href="../css/join_complete.css">
+    <link rel="stylesheet" href="../css/reservation3.css">
+    <link rel="stylesheet" href="../css/offer.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <section class="web_h">
+            <article class="top_wrap">
+                <div class="h_lang">
+                    <select>
+                        <option>KOR</option>
+                        <option>ENG</option>
+                    </select>
+                    <img src="../img/sunny.png">
+                </div>
+                <div class="h_nav">
+                    <ul>
+                        <li><a href="#">멤버십</a></li>
+                        <li><a href="login">로그인</a></li>
+                        <li><a href="join_agree">회원가입</a></li>
+                    </ul>
+                </div>
+            </article>
+            <h1><a href="/">
+                <img src="../img/hilton_logo.png">
+            </a></h1>
+            <div class="under_wrap">
+                <ul>
+                    <li>
+                        <a href="room">객실</a>
+                    </li>
+                    <li>
+                        <a href="intro">소개</a>
+                    </li>
+                    <li>
+                        <a href="event">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="notice">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="reservation">예약</a>
+                    </li>
+                    <li>
+                        <a href="location">오시는길</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--모바일용헤더-->
+        <section class="mobile_h menu-container">
+            <div class="header_m menu-wrapper">
+                 <!-- hamburger-menu -->
+                <div class="h_ham hamburger-menu"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+                <div><a href="/"><img src="../img/hilton_logo.png"></a></div>
+                <span class="material-symbols-outlined c_btn" onclick="">calendar_month</span>
+            </div>
+        </section>
+        <!--모바일-->
+            <section class="h_mobbox"> 
+                    <div class="fullscreen " id="fullscreen">   
+                        <nav class="fullscreen_menu">         
+                            <ul>
+                            <!--x img-->
+                            <li class="closeBtn"><img src="../Img/close.svg"></li> 
+                            <li><a href="login">LOGIN</a></li>  
+                            <li>|</li>
+                            <li><a href="reservation">RESERVATION</a></li>
+                            <li>|</li>
+                            <li><a href="#">MY PAGE</a></li>
+                            </ul>
+                            <p><a href="intro">ABOUT HILTON</a></p>
+                        </nav>
+                    </div>
+                         <!-- menu-wrapper -->
+                    <ul class="menu-list accordion">
+                        <li id="nav1" class="toggle accordion-toggle"> 
+                            <span class="icon-plus"></span>
+                            <a class="menu-link">객실</a>
+                        </li>
+                        <ul class="menu-submenu accordion-content">
+                            <li><a class="head" href="room">객실안내</a></li>
+                        </ul> 
+                        <li id="nav2" class="toggle accordion-toggle"> 
+                            <span class="icon-plus"></span>
+                            <a class="menu-link">프로모션</a>
+                        </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head" href="event">이벤트</a></li>
+                                <li><a class="head" href="offer">스페셜 오퍼</a></li>
+                            </ul>
+                        <li id="nav3" class="toggle accordion-toggle"> 
+                            <span class="icon-plus"></span>
+                            <a class="menu-link">공지사항</a>
+                        </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head" href="notice">공지사항</a></li>
+                            </ul>
+                            <li id="nav2" class="toggle accordion-toggle"> 
+                                <span class="icon-plus"></span>
+                                <a class="menu-link">예약</a>
+                            </li>
+                            <ul class="menu-submenu accordion-content">
+                                <li><a class="head" href="reservation">예약</a></li>
+                            </ul>
+                            <li id="nav2" class="toggle accordion-toggle"> 
+                                <span class="icon-plus"></span>
+                                <a class="menu-link" href="#">오시는길</a>
+                            </li>
+                                <ul class="menu-submenu accordion-content">
+                                    <li><a class="head" href="location">오시는길</a></li>
+                              
+                                </ul>
+                    </ul>
+                    <!-- menu-list accordion-->
+            </section>
+            <!--달력-->
+            <section class="m_reserve_wrap">
+                <article class="m_reserve_title">
+                    <h1>RESERVATION</h1>
+                    <a class="close_reserve" href="#"></a>
+                </article>
+                <article class="reserve_cont_wrap">
+                    <ul class="reserve_content">
+                        <li>
+                            <h2>체크인</h2>
+                            <div class="calendar_icon">
+                                <input type="text" class="calendar" id="MsDate" autocomplete="off" >
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <h2>체크아웃</h2>
+                            <div class="calendar_icon">
+                                <input type="text" class="calendar" id="MeDate" autocomplete="off">
+                            </div>
+                        </li>
+                        <li class="m_personal">
+                            <div>
+                                <p>성인</p>
+                                <div class="number_icon">
+                                    <input type="button" class="minus" onclick="mReserveA('minus')">
+                                    <p id="adultResult" class="count_num">0</p>
+                                    <input type="button" class="plus" onclick="mReserveA('plus')">
+                                </div>
+                            </div>
+                            <div>
+                                <p>어린이 <em>(13세 이하)</em></p>
+                                <div class="number_icon">
+                                    <input type="button" class="minus" onclick="mReserveC('minus')">
+                                    <p id="childResult" class="count_num">0</p>
+                                    <input type="button" class="plus" onclick="mReserveC('plus')">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="reserve_search">검색</button>
+                </article>
+            </section>
+    </header>
+        <%- body %>
+        <div class="fix_btn" id="location_side">
+            <button onclick="topFunction()">TOP</button>
+        </div>
+    <footer>
+        <section class="footer_wrap">
+            <article class="w1200">
+                <div class="footer_left">
+                    <h1><a href="/">
+                    </a></h1>
+                    <div class="footer_info_wrap">
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">사이트 이용규약</a></li>
+                            <li><a href="#">쿠키정책</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">기업정보</a></li>
+                        </ul>
+                        <div>
+                            <p class="siteinfo">
+                                <span class="adress">서울시 중구 소월로 50 밀레니엄 서울 힐튼</span>
+                                <span class="ceo">
+                                    <em>대표 곽익승</em>
+                                    <em>T. 02-753-7788</em>
+                                    <em>우편번호 : 04637</em>
+                                </span>
+                            </p>
+                            <p class="copyright">© 2022 HILLTON Co. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div id="familySiteWrap" onclick="list()">
+                        <div id="familysite">FAMILY SITES</div>
+                        <img id="footerMore" src="../img/footer_down.png">
+                        <ul id="sitelist">
+                            <li><a href="https://conrad.hilton.co.kr/hotel/seoul/conrad-seoul" target="_blank">콘래드 서울</a></li>
+                            <li><a href="https://hiltongardeninn.hilton.co.kr/hotel/seoul/hilton-garden-inn-seoul-gangnam" target="_blank">힐튼 가든 인 서울 강남</a></li>
+                            <li><a href="https://hilton.co.kr/hotel/gyeongju/gyeongju-hilton-hotel" target="_blank">힐튼 경주</a></li>
+                            <li><a href="https://hilton.co.kr/hotel/busan/ananti-hilton-busan" target="_blank">힐튼 부산</a></li>
+                        </ul>
+                    </div>
+                    <div class="sns_area">
+                        <ul>
+                            <li><a href="https://www.facebook.com/MillenniumHiltonSeoul/" target="_blank" class="fb_icon"></a></li>
+                            <li><a href="https://www.instagram.com/millennium_hilton_seoul/" target="_blank" class="in_icon"></a></li>
+                            <li><a href="https://twitter.com/hiltonhotels" target="_blank" class="tw_icon"></a></li>
+                            <li><a href="https://www.youtube.com/hilton" target="_blank" class="yt_icon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <%- script %>
+    <script src="../js/calendar.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

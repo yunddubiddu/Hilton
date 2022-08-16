@@ -1,0 +1,142 @@
+<main>
+    <form class="join" method="POST" action="/hiltonjoin" id="joinpost">
+        <section class="w1200">
+            <article class="join_title">
+                <h2>회원가입</h2>
+                <div class="join_route">
+                    <figure>
+                        <div class="join_circle">1</div>
+                        <figcaption>약관동의</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="join_circle active_join">2</div>
+                        <figcaption>회원정보입력</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="join_circle">3</div>
+                        <figcaption>가입완료</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="join_content">
+                <h3>회원정보입력</h3>
+                <% if(typeof errs !== 'undefined'){ %>
+                    <% errs.forEach(() =>{ %>
+                        <h3><%=err.param%> : <%=err.msg%></h3>
+                    <%})%>
+                <%}%>
+                <ul class="join_items">
+                    <li>
+                        <label class="nec">ID</label>
+                        <div class="join_input">
+                            <input type="text" id="uid" placeholder="4~12자 (특수문자 불가)" class="mr10" name="id">
+                            <button class="join_btn">CHECK</button>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">비밀번호</label>
+                        <div class="join_input">
+                            <input type="password" id="pwd" placeholder="비밀번호입력(8~25자의 영문+숫자+특수문자 조합" name="pw">
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">비밀번호확인</label>
+                        <div class="join_input">
+                            <input type="password" id="pwdCheck" placeholder="비밀번호입력(8~25자의 영문+숫자+특수문자 조합">
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">E-mail</label>
+                        <div class="join_input join_mail">
+                            <input type="text" id="email_id" name="emailID">
+                            <p>@</p>
+                            <input type="text" class="mr10" id="userEmail">
+                            <select required id="joinmail" class="join_dropbox" name="emailAdress">
+                                <option value="1">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">성명(영문)</label>
+                        <div class="join_input">
+                            <input type="text" id="eNameF" placeholder="First Name(이름)" class="mr10" pattern="[A-Za-z]+" name="EnameF">
+                            <input type="text" id="eNameL" placeholder="Last Name(성)" name="EnameL">
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">성명(한글)</label>
+                        <div class="join_input">
+                            <input type="text" id="uname" name="Kname">
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">생년월일</label>
+                        <div class="join_input">
+                            <select required id="year" class="join_dropbox mr10" name="birthYear">
+                                <option value="" selected disabled hidden>출생년도</option>
+                            </select>
+                            <select required  id="month" class="join_dropbox mr10" name="birthMonth">
+                                <option value="" selected disabled hidden>월</option>
+                            </select>
+                            <select required id="day" class="join_dropbox" name="birthDay">
+                                <option value="" selected disabled hidden>일</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="nec">성별</label>
+                        <div class="join_input">
+                            <select required id="joingender" class="join_dropbox" name="gender">
+                                <option value="">선택</option>
+                                <option value="남자">남자</option>
+                                <option value="여자">여자</option>
+                            </select>
+                    </li>
+                    <li>
+                        <label class="nec">연락처</label>
+                        <div class="join_input">
+                            <input type="text" id="mobile" placeholder="'-' 제외 숫자만 입력해주세요." name="phone">
+                        </div>
+                    </li>
+                    <li>
+                        <label>거주지</label>
+                        <div class="join_input">
+                            <select required id="joinAddress" class="join_dropbox">
+                                <option value="">선택</option>
+                                <option value="0">서울시</option>
+                                <option value="1">경기도</option>
+                                <option value="2">부산광역시</option>
+                                <option value="3">인천광역시</option>
+                                <option value="4">광주광역시</option>
+                                <option value="5">강원도</option>
+                                <option value="6">충청남도</option>
+                                <option value="7">충청북도</option>
+                                <option value="8">전라남도</option>
+                                <option value="9">전라북도</option>
+                                <option value="10">경상북도</option>
+                                <option value="11">경상남도</option>
+                                <option value="12">제주도</option>
+                                <option value="13">대구광역시</option>
+                                <option value="14">대전광역시</option>
+                                <option value="15">울산광역시</option>
+                                <option value="16">세종시</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <div class="join_submit">
+                <input type="button" value="PREVIOUS" onclick="javascript:location.href='/join_agree'">
+                <input type="button" value="JOIN" id="joinBtn">
+            </div>
+        </section>
+    </form>
+</main>
+<script src="../js/join.js"></script>

@@ -1,0 +1,416 @@
+.rf_main {
+  border-bottom: 1px solid #494949;
+  padding-bottom: 50px;
+}
+/* ---------------------------------------------------------Form------- */
+
+.rf_form {
+  color: #494949;
+  max-width: 732px;
+}
+.rf_form h3 {
+  padding: 40px 0;
+  font-size: 24px;
+  color: #000;
+}
+.rf_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.red_point::after {
+  position: absolute;
+  right: 1;
+  top: 1;
+  width: 3px;
+  height: 4px;
+  border: 1px solid red;
+}
+.rf_info > li {
+  display: flex;
+  padding-bottom: 20px;
+}
+.rf_info > li:last-child {
+  padding: 0;
+}
+.rf_info span {
+  width: 30%;
+  padding: 4px 0;
+  position: relative;
+}
+.rf_info span::after {
+  content: "";
+  position: absolute;
+  top: 2;
+  left: 1;
+  width: 3px;
+  height: 3px;
+  background-color: #eb6767;
+}
+#no_point::after {
+  display: none;
+}
+.inp {
+  width: 100%;
+  height: 38px;
+  padding: 0px 15px;
+  border: 1px solid #b0afaf;
+  color: #b0afaf;
+}
+.inp:last-child {
+  margin-left: 10px;
+}
+.inp_select:first-child {
+  margin-left: 0;
+}
+.inp_select {
+  width: calc(37.5% - 30px);
+  height: 40px;
+  padding: 0px 15px;
+  border: 1px solid #b0afaf;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/arrow_drop_down_FILL0_wght100_GRAD0_opsz24.png)
+    no-repeat 97% 50% #fff;
+}
+#sel_month {
+  background: url(../img/arrow_drop_down_FILL0_wght100_GRAD0_opsz24.png)
+    no-repeat 97% 50% #fff;
+}
+#sel_years {
+  background: url(../img/arrow_drop_down_FILL0_wght100_GRAD0_opsz24.png)
+    no-repeat 97% 50% #fff;
+}
+.rf_mail > div {
+  display: flex;
+}
+.inp_phone {
+  width: 70%;
+}
+.inp_mail:first-child {
+  width: 30%;
+  margin-right: 10px;
+}
+.email_adr {
+  width: 70%;
+}
+.hyp {
+  width: 24px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+}
+.mail_select {
+  width: 25%;
+  margin-left: 10px;
+}
+/* ----------------------------------------------------------------------------- */
+.rf_payment > li {
+  display: flex;
+  padding-bottom: 20px;
+}
+.rf_payment span {
+  width: 30%;
+  padding: 4px 0;
+}
+.rf_payment span::after {
+  content: "";
+  position: absolute;
+  top: 2;
+  left: 1;
+  width: 3px;
+  height: 3px;
+  background-color: #eb6767;
+}
+.pay_width {
+  width: 100%;
+}
+.cardnum {
+  width: calc(20% - 10px);
+}
+.cardnum:last-child {
+  margin-left: 0;
+}
+/* ----------------------------------------------------------------------------- */
+.caution_wrap,
+.req_wrap {
+  width: 809px;
+  border: 1px solid #b0afaf;
+  padding: 24px 30px;
+}
+.caution_wrap P {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #494949;
+}
+.req_wrap P {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #494949;
+}
+.rf_wrap select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* ----------------------------------------------------------------------------- */
+.rf_terms {
+  width: 871px;
+  position: relative;
+}
+.scroll1 {
+  overflow-y: scroll;
+  max-height: 160px;
+}
+.scroll2 {
+  overflow-y: scroll;
+  max-height: 160px;
+}
+.rf_terms li {
+  padding-bottom: 30px;
+}
+.rf_terms h4 {
+  padding-bottom: 10px;
+}
+.rf_check {
+  float: right;
+  bottom: 33px;
+  position: relative;
+}
+.all_check {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.require {
+  font-size: 16px;
+  color: #ff0000;
+}
+.left1 {
+  left: 260px;
+}
+.left2 {
+  left: 172px;
+}
+.checkbox + span::after {
+  width: 20px;
+  height: 20px;
+  background-color: #003f90;
+}
+.material-symbols-outlined {
+  display: block;
+  font-size: 20px;
+}
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.checkbox + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon_checkbox.png) no-repeat 0 0;
+  background-size: 40px 20px;
+  border-radius: 20px;
+}
+.checkbox:checked + span::before {
+  background-color: black;
+}
+.rf_detail {
+  display: none;
+}
+.material-symbols-outlined {
+  display: none;
+}
+.btn_req {
+  display: none;
+}
+/* ------------------------------------------------------------------------ */
+.rsv_apply {
+  display: block;
+  width: 160px;
+  margin: 80px auto 0;
+  color: #fff;
+  background: #19344d;
+  text-align: center;
+  padding: 14px 0;
+  margin-bottom: 50px;
+  border: none;
+}
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+  .reservation {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .reservation_1 {
+    display: none;
+  }
+  .reservation_2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* -------------------------------------------------------------- */
+  .rf_form {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .rf_info {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b0afaf;
+  }
+  .rf_info > li {
+    display: block;
+  }
+  .inp_select {
+    width: 32.5%;
+  }
+  .rf_wrap {
+    padding-top: 10px;
+  }
+  .inp_phone {
+    width: 100%;
+  }
+  .rf_mail {
+    display: block;
+  }
+  .rf_mail > div {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .inp_mail:first-child {
+    width: 35%;
+  }
+  .email_adr {
+    width: 65%;
+  }
+  .mail_select {
+    width: 100%;
+    margin: auto;
+  }
+  .rf_payment > li {
+    display: block;
+  }
+  .pay_width {
+    width: 100%;
+  }
+  .card_num {
+    width: calc(21% - 10px);
+  }
+  .caution_wrap {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .rf_check {
+    float: left;
+  }
+  /* ------------------- */
+  .require {
+    position: absolute;
+    width: 45px;
+    font-size: 14px;
+  }
+  .rf_terms {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .all_check {
+    bottom: 10px;
+  }
+  .rf_check {
+    font-size: 0;
+  }
+  .all_check {
+    padding: 10px 15px;
+    border: 1px solid #494949;
+    position: relative;
+    top: 1px;
+  }
+  .rf_terms h4 {
+    padding-left: 30px;
+  }
+  .rf_terms li {
+    padding: 10px 15px 0;
+    border: 1px solid #494949;
+    position: relative;
+  }
+  .rf_terms li:last-child {
+    border-top: none;
+  }
+  .btn_req {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/arrow_forward_ios_FILL0_wght100_GRAD0_opsz48.png);
+    background-position: center;
+    background-color: #fff;
+    background-size: cover;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .accordion {
+    transition: 0.4s;
+  }
+  .panel {
+    display: none;
+    overflow: auto;
+    padding: 10px 0;
+    max-height: 1000px;
+    border: none;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .rf_form h3 {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  .cardnum {
+    width: 19%;
+  }
+  .rf_terms li {
+    font-size: 14px;
+  }
+  .require {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .rf_form {
+    padding: 0 15px;
+  }
+  .rf_form h3 {
+    font-size: 14px;
+    padding: 30px 0;
+  }
+  .rf_info li {
+    font-size: 12px;
+  }
+  .cardnum {
+    width: 13%;
+  }
+  .caution_wrap {
+    padding: 20px 15px;
+  }
+  .caution_wrap P {
+    font-size: 12px;
+  }
+}

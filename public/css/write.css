@@ -1,0 +1,41 @@
+.noti_update {
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.title_number {
+  width: 100%;
+}
+.title_news {
+  width: 100%;
+  height: 500px;
+}
+.save_btn {
+  padding: 50px 0;
+}
+.white_px {
+  font-size: 24px;
+  padding: 10px 0;
+}
+.noti_px {
+  font-size: 26px;
+  padding: 10px 0;
+}
+.btn_wrap2 {
+  display: flex;
+}
+#save {
+  border: none;
+  background-color: #19344d;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+}
+#backbtn {
+  border: none;
+  background-color: #19344d;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+}

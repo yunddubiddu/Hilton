@@ -1,0 +1,415 @@
+<main>
+  <figure class="reservation_ban">
+      <h2>RESERVATION</h2>
+  </figure>
+  <section class="reservation">
+      <article class="reservation_1">
+          <h5>밀레니엄 힐튼 서울</h5>
+          <div>
+              <input id="ResCheakIn" value="2022-05-24" readonly></input>
+              <span class="reservation_cal"></span>
+          </div>
+          <div>
+              <input id="ResCheakOut" value="2022-05-24" readonly></input>
+              <span class="reservation_cal"></span>
+          </div>
+          <div id = reservation_peo onclick="openCloseToc1()">
+              <p>성인 <input id="valueInputA" value="2"> / 어린이 <input id="valueInputC" value="0"></p>
+              <span class="reservation_peo_img">
+              </span>
+          </div>
+          <h5>프로모션 코드</h5>
+          <input type="text" placeholder="CODE NUMBER"><br>
+          <button type="submit">SEARCH</button>
+          <span class="reservation_inquiry">
+              <h6>예약문의</h6>
+              <p>TEL. +82-2-753-7788</p>
+              <p>E-mail. seoul@hilton.com</p>
+          </span>
+          <ul id="reservation_1_men">
+              <li id="">
+                  <h6>성인</h6>
+                  <input type="button" class="minus reservation_mi" onclick="resAdult('minus')">
+                  <p id="resAdultResult">2</p>
+                  <input type="button" class="plus reservation_pl" onclick="resAdult('plus')">
+              </li>
+              <li>
+                  <h6>어린이</h6>
+                  <input type="button" class="minus reservation_mi" onclick="resChild('minus')">
+                  <p id="resChildResult">0</p>
+                  <input type="button" class="plus reservation_pl" onclick="resChild('plus')">
+              </li>
+              <li><button id="resClear" onclick="printName()">완료</button></li>
+          </ul>
+      </article>
+      <article class="reservation_1-1">
+          <div>
+              <input id="ResCheakInM" value="2022-06-24" readonly></input>
+              <span class="reservation_cal"></span>
+          </div>
+          <div>
+              <input id="ResCheakOutM" value="2022-06-24" readonly></input>
+              <span class="reservation_cal"></span>
+          </div>
+          <div id = reservation_peo onclick="openCloseToc1M()">
+              <p>성인 <input id="valueInputAM" value="2" readonly> / 어린이 <input id="valueInputCM" value="0" readonly></p>
+              <span class="reservation_peo_img">
+              </span> 
+          </div>
+          <ul id="reservation_11_men">
+              <li id="">
+                  <h6>성인</h6>
+                  <input type="button" class="minus2 reservation_mi" onclick="resAdult('minus2')">
+                  <p id="resAdultResult2">2</p>
+                  <input type="button" class="plus2 reservation_pl" onclick="resAdult('plus2')">
+              </li>
+              <li>
+                  <h6>어린이</h6>
+                  <input type="button" class="minus2 reservation_mi" onclick="resChild('minus2')">
+                  <p id="resChildResult2">0</p>
+                  <input type="button" class="plus2 reservation_pl" onclick="resChild('plus2')">
+              </li>
+              <li><button id="resClear" onclick="printName()">완료</button></li>
+          </ul>
+      </article>
+    <article class="reservation_2">
+      <div class="reservation_top">
+          <h3>객실 & 옵션선택</h3>
+          <ul class="reservation_ing">
+              <li>1</li>
+              <li  class="reservation_ingB">2</li>
+              <li>3</li>
+          </ul>
+          <div class="reservation_2_gray"></div>
+      </div>
+      <div class="rf_main">
+        <form class="rf_form">
+          <ul class="rf_info">
+            <h3>1. 예약자 정보</h3>
+            <li>
+              <span>성명(영문)</span>
+              <div class="rf_wrap">
+                <input type="text" class="inp" placeholder="First name(이름)" id="eNameF"/>
+                <input type="text" class="inp" placeholder="Last name(성)" id="eNameL"/>
+              </div>
+            </li>
+            <li>
+              <span id="no_point">성명(한글)</span>
+              <div class="rf_wrap">
+                <input type="text" class="inp" placeholder="성" />
+                <input type="text" class="inp" placeholder="이름" />
+              </div>
+            </li>
+            <li>
+              <span>생년월일</span>
+              <div class="rf_wrap">
+                <select class="inp_select" id="birthyear">
+                  <option value="" selected disabled hidden>선택</option>
+                </select>
+                <select class="inp_select" id="birthmonth">
+                  <option value="" selected disabled hidden>선택</option>
+                </select>
+                <select class="inp_select" id="birthday">
+                  <option value="" selected disabled hidden>선택</option>
+                </select>
+              </div>
+            </li>
+            <li class="input_phone">
+              <span>휴대폰번호</span>
+              <div class="rf_wrap">
+                <select class="inp_select">
+                  <option>+82</option>
+                </select>
+                <input
+                  type="text"
+                  class="inp inp_phone"
+                  placeholder="숫자만 입력"
+                  id="mobile"
+                />
+              </div>
+            </li>
+            <li>
+              <span>E-mail</span>
+              <div class="rf_wrap rf_mail">
+                <div>
+                  <input
+                    type="text"
+                    class="inp inp_mail"
+                    name="emailid"
+                    maxlength="18"
+                    required="required"
+                    id="userEmail"
+                  />
+                  <p class="hyp">@</p>
+                  <input
+                    type="text"
+                    class="inp email_adr"
+                    name="emaidomain"
+                    maxlength="18"
+                    required="required"
+                    id="email_id"
+                  />
+                </div>
+                <select
+                  class="inp_select mail_select"
+                  name="email" 
+                >
+                  <option value="1">직접입력</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="daum.net">daum.net</option>
+                  <option value="hanmail.com">hanmail.com</option>
+                  <option value="nate.com">nate.com</option>
+                  <option value="hotmail.com">hotmail.com</option>
+                  <option value="yahoo.com">yahoo.com</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="rf_payment">
+            <h3>2. 결제정보</h3>
+            <li>
+              <span>카드종류</span>
+              <div class="rf_wrap">
+                <select class="pay_width inp_select" id="cardselect">
+                  <option value="">선택</option>
+                  <option value="WX">삼성 Amex 카드</option>
+                  <option value="BC">비씨카드</option>
+                  <option value="CB">국민카드</option>
+                  <option value="DC">현대카드</option>
+                  <option value="DI">디너카드</option>
+                  <option value="JC">JCB Card</option>
+                  <option value="KE">하나(KEB)카드</option>
+                  <option value="LC">롯데카드</option>
+                  <option value="LX">롯데 Amex 카드</option>
+                  <option value="MC">마스터카드</option>
+                  <option value="NH">농협카드</option>
+                  <option value="SG">SSG</option>
+                  <option value="SH">신한카드</option>
+                  <option value="UP">UnionPay card</option>
+                  <option value="VA">비자카드</option>
+                  <option value="WC">삼성카드</option>
+                  <option value="ARC">AR Cleanring</option>
+                  <option value="AX">Amex Card</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <span>카드번호</span>
+              <div class="rf_wrap">
+                <input type="text" class="inp cardnum" id="cardnum1" maxlength="4" />
+                <input type="text" class="inp cardnum" id="cardnum2" maxlength="4" />
+                <input type="password" class="inp cardnum" id="cardnum3" maxlength="4" />
+                <input type="text" class="inp cardnum" id="cardnum4" maxlength="4" />
+              </div>
+            </li>
+            <li>
+              <span>CVC</span>
+              <div class="rf_wrap">
+                <input type="text" class="inp cardnum" maxlength="3"  id="cardcvc">
+              </div>
+            </li>
+            <li>
+              <span>유효기간</span>
+              <div class="rf_wrap">
+                <select class="inp" id="selmonth">
+                  <option value="">Month</option>
+                  <option value="01">1</option>
+                  <option value="02">2</option>
+                  <option value="03">3</option>
+                  <option value="04">4</option>
+                  <option value="05">5</option>
+                  <option value="06">6</option>
+                  <option value="07">7</option>
+                  <option value="08">8</option>
+                  <option value="09">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <select class="inp" id="selyears">
+                  <option value="">Years</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                  <option value="2031">2031</option>
+                  <option value="2032">2032</option>
+                  <option value="2033">2033</option>
+                  <option value="2034">2034</option>
+                  <option value="2035">2035</option>
+                  <option value="2036">2036</option>
+                  <option value="2037">2037</option>
+                  <option value="2038">2038</option>
+                  <option value="2039">2039</option>
+                  <option value="2040">2040</option>
+                  <option value="2041">2041</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+
+          <article class="rf_caution">
+            <h3>3. 유의사항</h3>
+            <div class="caution_wrap">
+              <p>체크인/체크아웃</p>
+              <p>체크인은 오후 15시부터, 체크아웃은 12시입니다.</p>
+              <p>
+                얼리 체크인과 레이트 체크아웃은 현장 상황에 따라 당일날 가능
+                여부를 확인 할 수 있으며 별도의 추가비용이 발생할 수 있습니다.
+              </p>
+              <p>문의 : +82-2-753-7788</p>
+              <br />
+              <p>해피서비스</p>
+              <p>
+                어린이 동반고객에 한하여 아기 욕조, 유모자, 아기 변기커버, 아기
+                침대, 젖병 소독기 등의 유아용 대여물품을 무료로 대여 가능
+                합니다.
+              </p>
+              <p>대여관련은 프론트에 직접 문의하시기 바랍니다.</p>
+              <p>
+                유모차와 휠체어가 필요하신 경우 컨시어지 데스크로 예약해주시기
+                바랍니다.
+              </p>
+              <p>
+                해피서비스 : 힐튼 호텔은 임산부와 어린이를 위한 렌탈서비스를
+                제공해드리고 있습니다.
+              </p>
+              <p>제한된 수량으로 대여 물품은 조기 마감 될 수 있습니다.</p>
+            </div>
+          </article>
+
+          <ul class="rf_terms">
+            <h3>4. 개인정보 수집항목 및 결제취소 규정 동의</h3>
+            <label class="all_check">
+              <input class="checkbox" type="checkbox" id="chk01" name="chk01"/>
+              <span><p>전체동의</p></span>
+            </label>
+            <li>
+              <h4>개인정보 수집항목 및 이용동의
+              </h4>
+              <label class="rf_check">
+                <input class="checkbox" type="checkbox" id="chk02" name="cagree"/>
+                <span>동의<span class="require left1">(필수)</span></span>
+              </label>
+              <button class="btn_req accordion"></button>
+              <div class="req_wrap scroll1 panel">
+                <p>
+                  힐튼 호텔 서울은 다음 각 호의 개인정보를 아래와 같은 목적을
+                  위하여 수집하고 있습니다.<br />
+                  <개인정보의 수집 항목>
+                </p>
+                <p>1. 필수 정보</p>
+                <p>
+                  - 아이디, 이메일, 성명(영문,한글), 생년월일, 성별, 연락처,
+                  거주지
+                </p>
+                <p>2. 선택 정보</p>
+                <p>
+                  - 주소, 자택 전화번호, 결혼여부, 자녀수, 기념일, 직업, 직장명,
+                  방문목적, 관심분야
+                </p>
+                <p>수집ㆍ이용목적</p>
+                <p>
+                  - 성명, 아이디, 비밀번호, 생년월일, 성별 : 서비스 이용에 따른
+                  본인 식별 절차에 이용
+                </p>
+                <p>- 주소, 전화번호, 핸드폰번호,</p>
+                <p>
+                  이메일 : 공지사항 전달, 본인 의사 확인, 불만 처리 등 원활한
+                  의사소통 경로의 확보와 새로운 서비스, DM 발송 등의 배송에 대한
+                  정확한 배송지의 확보
+                </p>
+                <p>
+                  - 결혼여부, 방문목적, 관심분야 : 맞춤 서비스 제공 및 이용객
+                  통계 분석을 위한 자료
+                </p>
+                <p>
+                  * 위 정보는 가입 당시 정보 뿐만 아니라 정보 수정으로 변경된
+                  정보를 포함합니다.
+                </p>
+                <p>개인정보의 수집 방법</p>
+                <p>
+                  - 힐튼은 서면양식, 홈페이지, 전화 및 팩스를 통한 본인 확인,
+                  경품 행사 응모 등의 방법으로 개인정보를 수집 합니다.
+                </p>
+                <p>수집하는 개인정보의 보유 및 이용기간</p>
+                <p>
+                  - 회원님의 개인정보는 회원탈회시 까지 보유 및 이용하며,
+                  개인정보 수집∙이용 목적이 달성된 후에는 재생할 수 없는 방법에
+                  의하여 완전히 삭제하며, 추후 열람이나 이용이 불가능한 상태로
+                  처리합니다.
+                </p>
+                <p>
+                  ※ 상기 개인정보 수집∙이용에 대하여 귀하는 동의하지 않을 수
+                  있습니다. 단, 동의 거부 시 홈페이지 회원가입 불가합니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <h4>
+                결제취소 규정 동의
+
+              </h4>
+
+              <label class="rf_check">
+                <input class="checkbox" type="checkbox" id="chk03" name="cagree" />
+                <span>동의<span class="require left2">(필수)</span></span>
+              </label>
+              <button class="btn_req accordion"></button>
+              <div class="req_wrap scroll2 panel">
+                <p>
+                  체크인 시 프론트 데스크 직원이 체크아웃 날짜를 확인합니다.
+                  제시된 요금은 체크인 날짜와 투숙 기간 기준입니다. 조기
+                  체크아웃 시 가격이 변경될 수 있습니다.
+                </p>
+                <p>
+                  고객이 사기 또는 부적절한 행위에 관여한 것으로 보이는 경우
+                  또는 예약에 실수나 오류가 포함되거나 실수나 오류에 의한 예약인
+                  것으로 보이는 기타 상황의 경우, 당사는 예약을 취소하거나
+                  수정할 수 있는 권리를 갖고 있습니다.
+                </p>
+                <p>
+                  여기 나열된 합계는 현재 세금 및 환율(해당될 경우)을 기준으로
+                  한 예상 금액이며 투숙 중에 발생할 수 있는 추가 요금/비용은
+                  포함되어 있지 않습니다.
+                </p>
+                <p>세금</p>
+                <p>1박당 객실별 10.00%</p>
+
+                <p>보장 및 취소 정책</p>
+
+                <p>
+                  이 예약을 하려면 신용카드가 필요합니다. 당일 전 날 호텔 현지
+                  시간으로 오후 11:59까지 무료 취소가 가능합니다.
+                </p>
+
+                <p>
+                  직불카드/신용카드를 사용하여 체크인할 경우 체크아웃 날짜까지
+                  예상 부대 비용을 포함하여 호텔에 지급해야 할 총 예상 지급액에
+                  대해 신용카드 계정이 보류될 수 있고, 카드 발행사의 재량에 따라
+                  체크아웃 날짜로부터 72시간 이상 보류가 해제되지 않을 수
+                  있습니다.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div id="modal_notice" class="modal"></div>
+        </form>
+      </div>
+      <input type="button" class="rsv_apply" value="예약완료" id="ResBtn"></input>
+    </article>
+  <script src="js/reservation.js"></script>
+  <script src="js/reservation2.js"></script>
+    <div class="fix_btn" id="location_side">
+      <button onclick="topFunction()">TOP</button>
+  </div>
+  </section>
+</main>

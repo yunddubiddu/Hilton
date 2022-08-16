@@ -1,0 +1,76 @@
+
+<main>
+  <figure class="notice_ban">
+    <h2>NOTICE</h2>
+  </figure>
+  <nav class="notice_nav">
+    <ul>
+      <li class="noti_gray tablinks" id="ALL">
+        <span class="all_ico"></span>
+        <p class="grayfont fontAll">ALL</p>
+      </li>
+      <li id="AMENITIES">
+        <span class="ame_ico"></span>
+        <p class="grayfont fontAmenities">AMENITIES</p>
+      </li>
+      <li id="SERVICE">
+        <span class="ser_ico"></span>
+        <p class="grayfont fontService">SERVICE</p>
+      </li>
+      <li id="MEETING">
+        <span class="mee_ico"></span>
+        <p class="grayfont fontMeeting">MEETING</p>
+      </li>
+      <li id="ROOMS">
+        <span class="roo_ico"></span>
+        <p class="grayfont fontRooms">ROOMS</p>
+      </li>
+      <li id="DINING">
+        <span class="din_ico"></span>
+        <p class="grayfont fontDining">DINING</p>
+      </li>
+      <li id="EVENT">
+        <span class="eve_ico"></span>
+        <p class="grayfont fontEvent">EVENT</p>
+      </li>
+      <li id="PARKIING">
+        <span class="par_ico"></span>
+        <p class="grayfont fontParking">PARKIING</p>
+      </li>
+      <span class="noti_graybar"></span>
+    </ul>
+    <span>
+      <input type="text" placeholder="검색" />
+      <span class="serch_ico"><a href=""></a></span>
+    </span>
+  </nav>
+    <section class="notice_button">
+      <button class="notice_table_manager" type="button" value="새작성"
+      onclick="javascript:location.href='/write'">관리자 작성페이지</button>
+    </section>  
+    <section class="notice_table">
+      <ul>
+          <li class="notice_table_top">
+              <p>구분</p>
+              <p>전체</p>
+          </li>
+      </ul>
+      <ul class="notice_table_body">
+        <% rows.forEach((row, index)=>{ %>
+        <li class="tabcontent paging <%= row.noticeItem%>" onclick="javascript:location.href='/notice_deta?id=<%=row.id%>'">
+          <p class="noticeItem">
+            <%= row.noticeItem%>
+          </p>
+          <p>
+          <%= row.title%>
+          </p>
+         </li>
+         <% }) %>
+
+         <nav aria-label="Page navigation example">
+          <ul class="pagination pagination-seperated notice_num "></ul>
+        </nav>
+
+         <script src="../js/notice.js"></script>  
+  </section>
+</main>

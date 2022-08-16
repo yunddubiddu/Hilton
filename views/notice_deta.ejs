@@ -1,0 +1,86 @@
+<main>
+    <figure class="notice_ban">
+        <h2>NOTICE</h2>
+    </figure>
+    <nav class="notice_nav">
+        <ul>
+            <li class="noti_gray tablinks" id="ALL">
+                <span class="all_ico"></span>
+                <p class="grayfont fontAll">ALL</p>
+            </li>
+            <li id="AMENITIES">
+                <span class="ame_ico" ></span>
+                <p class="grayfont fontAmenities">AMENITIES</p>
+            </li>
+            <li id="SERVICE">
+                <span class="ser_ico"></span>
+                <p class="grayfont fontService">SERVICE</p>
+            </li>
+            <li id="MEETING">
+                <span class="mee_ico"></span>
+                <p class="grayfont fontMeeting">MEETING</p>
+            </li>
+            <li id="ROOMS">
+                <span class="roo_ico"></span>
+                <p class="grayfont fontRooms">ROOMS</p>
+            </li>   
+            <li id="DINING">
+                <span class="din_ico"></span>
+                <p class="grayfont fontDining">DINING</p>
+            </li>
+            <li id="EVENT">
+                <span class="eve_ico"></span>
+                <p class="grayfont fontEvent">EVENT</p>
+            </li>
+            <li id="PARKIING">
+                <span class="par_ico"></span>
+                <p class="grayfont fontParking">PARKIING</p>
+            </li>
+            <span class="noti_graybar"></span>
+        </ul>
+        <span>
+            <input type="text" placeholder="검색">
+            <span class="serch_ico"><a href=""></a></span>
+        </span>
+    </nav>
+        <section class="notice_deta">
+            <% if(typeof errs !== 'undefined'){ %>
+                <% errs.forEach(() =>{ %>
+                    <h3><%= err.param %> : <%= err.msg %></h3>
+                <% }) %>
+            <%}%>
+            <form>
+                <input type="hidden" name="id" value="<%=row.id%>">
+                <article class="notice_deta_top">
+                    <h4 style="width: 20%;"><%=row.noticeItem%></h4>   
+                    <h4 style="width: 70%;">
+                        <%=row.title%>
+                    </h4>   
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>   
+                </article>
+                <article class="notice_deta_body">
+                    <div style="white-space: pre-line;"><%=row.content%></div>
+                </article>
+            </form>
+            <div class="notice_btn1">
+                <input
+                  type="button"
+                  onclick="javascript:location.href='/updatenoti?id=<%=row.id%>'"
+                  value="수정"
+                />
+                <input
+                  type="button"
+                  onclick="javascript:location.href='/deletenoti?id=<%=row.id%>'"
+                  value="삭제"
+                />
+              </div>
+            <span class="notice_deta_bottom"><a href="notice">
+                <p>목록</p>
+            </a></span>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script src="../js/notice.js"></script>

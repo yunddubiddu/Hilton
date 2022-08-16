@@ -1,0 +1,31 @@
+/*1200으로 가두고 박스 6개 나열한 다음 wrap 주는 방법 */
+section{
+    width: 1200px;
+    height: 1000px;
+    background-color: yellowgreen;
+    margin: auto;
+    overflow: hidden; /*이게 있어야 30px 튀어 나온 게 사라짐*/
+}
+
+/************************************************************/
+
+.figure_wrap{
+    width: calc(100% + 30px); /*양옆에 간격을 30px를 주고 싶은데 한 쪽만 줄 수 없으니 
+    일단 30pㅌ로 크게 뚱뚱하게 만듦*/
+    background-color: red;
+    margin-left: -15px; /*튀어나온 애를 빼줌*/
+    display: flex;
+    flex-wrap: wrap; /*1200으로 가둬놓고 그 이상되면 알아서 떨어지게 함 */
+}
+
+.figure_wrap>figure{
+    width: 50%; /*두 개만 남고 나머지 다 밑으로 떨어지게 함*/
+    padding: 0 15px; /*박스 안쪽으로 여백을 만들어줌 */
+    box-sizing: border-box; /*박스 가로값이 변하지 않도록 해줌*/
+    height: 100px;
+    background-color: aquamarine;
+    margin-bottom: 50px; /*이걸 적어줘야 일정하게 아래쪽 공간이 생김*/
+}
+
+/*미디어 쿼리에선 width 값을 100으로 바꾸고 
+섹션 값을 768으로 낮추면 되겠쥬?*/

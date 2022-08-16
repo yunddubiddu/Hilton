@@ -1,0 +1,34 @@
+    <main>        
+      <figure class="notice_ban">
+      <h2>NOTICE</h2>
+  </figure>
+      <section class="noti_update">
+        <h2 class="noti_px">공지사항 작성하기</h2>
+        <% if(typeof errs !== "undefined"){ %> <% errs.forEach((err)=>{%>
+          <h4 style="color: red"><%=err.param%> : <%=err.msg%></h4>
+          <% }) %> <% } %>
+        <form method="POST" action="/hiltonWrite">
+              <h2 class="noti_px">제목</h2>
+              <input type="text" name="title" class="title_number">
+              <p class="noti_px">항목 :</p>
+              <select name="noticeItem">
+                <option value="AMENITIES">AMENITIES</option>
+                <option value="SERVICE">SERVICE</option>
+                <option value="MEETING">MEETING</option>
+                <option value="ROOMS">ROOMS</option>
+                <option value="DINING">DINING</option>
+                <option value="EVENT">EVENT</option>
+                <option value="PARKING">PARKING</option>
+              </selcet>
+              <p class="noti_px">내용 작성 :</p>
+              <textarea name="content" class="title_news"></textarea>
+              <input type="submit" value="저장" id="save">
+              <input
+                  type="button"
+                  value="뒤로 가기"
+                  onclick="javascript:location.href='/notice'"
+                  id="backbtn"
+              />
+        </form>
+      </section>
+    </main>
